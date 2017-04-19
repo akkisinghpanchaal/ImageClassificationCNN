@@ -1,6 +1,8 @@
-f_path = '/media/akkisinghpanchaal/bbeb802a-c5a6-44fa-8e78-00a57e8aee07/akshay_backup/akshay2/SEM-VII/IndependentStudy/Data/babies_v4/';
+%f_path = '/media/akkisinghpanchaal/bbeb802a-c5a6-44fa-8e78-00a57e8aee07/akshay_backup/akshay2/SEM-VII/IndependentStudy/Data/babies_v4/';
+f_path = '../babies_images_edited/'
 folder = dir(strcat(f_path,'*.jpg'));
-nf_path = '/media/akkisinghpanchaal/bbeb802a-c5a6-44fa-8e78-00a57e8aee07/akshay_backup/akshay2/SEM-VIII/IS/ImageClassificationCNN/CNN_data/'
+%nf_path = '/media/akkisinghpanchaal/bbeb802a-c5a6-44fa-8e78-00a57e8aee07/akshay_backup/akshay2/SEM-VIII/IS/ImageClassificationCNN/CNN_data/'
+nf_path = '../CNN_data/'
 %faceDetector = vision.CascadeObjectDetector;
 NoseDetect = vision.CascadeObjectDetector('Nose','MergeThreshold',16); 
 MouthDetect = vision.CascadeObjectDetector('Mouth','MergeThreshold',16); 
