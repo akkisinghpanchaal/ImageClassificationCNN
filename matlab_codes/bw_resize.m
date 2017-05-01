@@ -5,8 +5,8 @@ for k = 1:length(dirData) %the loop will continue for the number of images
     data1 = imread(strcat('../CNN_data/Nose/',filename));
     data2 = rgb2gray(data1);
     data3 = imresize(data2,[96 96]); %w=40, h=30
+    data4 = edge(data3,'canny',0.1);
     iFile = filename
     newName = filename
-        imwrite(data3,['../resized_CNN_data/bw/Nose/', newName,]);
-     
-   end
+    imwrite(data4,['../resized_CNN_data/gradients/Nose/', newName,]); 
+end
